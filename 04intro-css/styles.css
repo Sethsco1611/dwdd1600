@@ -1,0 +1,151 @@
+﻿body {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #f6f1ea;
+    color: #2f241f;
+    margin: 0;
+}
+
+header {
+    background-color: #5c3b2e;
+    color: #ffffff;
+    padding: 24px;
+    text-align: center;
+    border-bottom: 4px solid #d8b08c;
+}
+
+    header span {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    header p {
+        margin: 8px 0 0 0;
+    }
+
+nav {
+    background-color: #d8b08c;
+    border-bottom: 3px solid #5c3b2e;
+}
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    nav a {
+        display: flex;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 20px;
+        text-decoration: none;
+        color: #2f241f;
+        font-weight: 700;
+    }
+
+        nav a:hover {
+            background-color: #c28f62;
+            color: #ffffff;
+        }
+
+        nav a.active {
+            background-color: #5c3b2e;
+            color: #ffffff;
+        }
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5c3b2e;
+    margin-top: 0;
+    border-bottom: 2px solid #d8b08c;
+    padding-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #7a4f3b;
+    margin-top: 28px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+ul.feature-list {
+    list-style-type: square;
+    margin: 16px 0 20px 24px;
+    padding: 12px 12px 12px 32px;
+    background-color: #fffaf5;
+    border: 2px solid #d8b08c;
+    border-radius: 10px;
+}
+
+ol {
+    margin: 16px 0 20px 24px;
+    padding: 12px 12px 12px 32px;
+    background-color: #fffaf5;
+    border: 2px solid #d8b08c;
+    border-radius: 10px;
+}
+
+dl {
+    margin: 20px 0;
+    padding: 16px;
+    background-color: #fffaf5;
+    border: 2px solid #d8b08c;
+    border-radius: 10px;
+}
+
+dt {
+    font-weight: 700;
+    margin-top: 10px;
+    color: #5c3b2e;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+address {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: #fffaf5;
+    border: 2px solid #7a4f3b;
+    border-radius: 10px;
+    font-style: normal;
+}
+
+main a {
+    color: #7a2e2e;
+}
+
+    main a:hover {
+        color: #c28f62;
+    }
+
+footer {
+    background-color: #2f241f;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 24px;
+}body
