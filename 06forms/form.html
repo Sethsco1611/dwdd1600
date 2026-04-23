@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Seth Ashton">
+    <meta name="description" content="Contact Nightjar Coffee Co. for questions, feedback, catering requests, and drink preferences.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightjar Coffee Co. | Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contact form page -->
+    <header>
+        <span>Nightjar Coffee Co.</span>
+        <p>Warm coffee, late study nights, and a place to land.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="form.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contact Nightjar Coffee Co.</h1>
+
+        <p>
+            Use this form to ask a question, give feedback, or tell us what kinds of drinks and events
+            you would like to see at the cafe.
+        </p>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <label>
+                    Full Name *
+                    <input type="text" name="fullname" required>
+                </label>
+
+                <label>
+                    Email Address *
+                    <input type="email" name="email" required>
+                </label>
+
+                <label>
+                    Phone Number
+                    <input type="tel" name="phone">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Visit Preferences</legend>
+
+                <p class="form-note">What best describes why you visit?</p>
+
+                <label class="radio-option">
+                    <input type="radio" name="visit_type" value="study" required>
+                    Study or work
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="visit_type" value="social">
+                    Meeting friends
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="visit_type" value="quick-stop">
+                    Quick coffee stop
+                </label>
+
+                <label>
+                    Favorite Drink Category
+                    <select name="drink_category">
+                        <option value="">Please select</option>
+                        <option value="espresso">Espresso drinks</option>
+                        <option value="brew">Brewed coffee</option>
+                        <option value="cold">Cold drinks</option>
+                        <option value="tea">Tea</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras and Feedback</legend>
+
+                <p class="form-note">Which things matter most to you?</p>
+
+                <label class="check-option">
+                    <input type="checkbox" name="priority" value="quality">
+                    High quality coffee
+                </label>
+
+                <label class="check-option">
+                    <input type="checkbox" name="priority" value="quiet-space">
+                    Quiet seating
+                </label>
+
+                <label class="check-option">
+                    <input type="checkbox" name="priority" value="pastries">
+                    Better pastry options
+                </label>
+
+                <label class="check-option">
+                    <input type="checkbox" name="priority" value="events">
+                    More community events
+                </label>
+
+                <label>
+                    Additional Comments *
+                    <textarea name="comments" rows="6" placeholder="Tell us what you would like to see from Nightjar Coffee Co." required></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nightjar Coffee Co.</p>
+    </footer>
+</body>
+</html>
