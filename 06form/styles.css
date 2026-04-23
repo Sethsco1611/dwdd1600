@@ -1,0 +1,363 @@
+﻿/* Nightjar Coffee Co. - Advanced CSS */
+/* Purple / blue night theme */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #0f0c1a;
+    color: #e6e0ff;
+    margin: 0;
+}
+
+/* Page width control */
+header,
+nav,
+main,
+footer,
+.hero {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1b1433, #241b45, #1b1433);
+    color: #f2edff;
+    padding: 24px;
+    border-bottom: 3px solid #6a5acd;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+    .site-header img {
+        width: 100px;
+        height: auto;
+        flex: 0 0 auto;
+    }
+
+header span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #b8aaff;
+}
+
+header p {
+    margin: 8px 0 0 0;
+    color: #cfc6ff;
+}
+
+/* Navigation */
+nav {
+    background-color: #2a1f4d;
+    border-bottom: 2px solid #6a5acd;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: flex;
+        align-items: center;
+        min-height: 48px;
+        padding: 12px 20px;
+        text-decoration: none;
+        color: #e6e0ff;
+        font-weight: 700;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+        nav a:hover {
+            background-color: #6a5acd;
+            color: #ffffff;
+        }
+
+        nav a.active {
+            background-color: #483d8b;
+            color: #ffffff;
+        }
+
+/* Hero image */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Main */
+main {
+    padding: 24px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #a78bfa;
+    border-bottom: 2px solid #6a5acd;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #c4b5fd;
+    margin-top: 28px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #ddd6ff;
+}
+
+main a {
+    color: #7dd3fc;
+}
+
+    main a:hover {
+        color: #c084fc;
+    }
+
+/* Lists */
+ul.feature-list {
+    list-style-type: square;
+    margin: 16px 0 20px 24px;
+    padding: 12px 12px 12px 32px;
+    background-color: #1a1333;
+    border: 2px solid #6a5acd;
+    border-radius: 10px;
+}
+
+ol {
+    margin: 16px 0 20px 24px;
+    padding: 12px 12px 12px 32px;
+    background-color: #1a1333;
+    border: 2px solid #6a5acd;
+    border-radius: 10px;
+}
+
+dl {
+    margin: 20px 0;
+    padding: 16px;
+    background-color: #1a1333;
+    border: 2px solid #6a5acd;
+    border-radius: 10px;
+}
+
+dt {
+    font-weight: 700;
+    color: #a78bfa;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+address {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: #1a1333;
+    border: 2px solid #7c3aed;
+    border-radius: 10px;
+    font-style: normal;
+}
+
+/* Home image */
+.home-image {
+    float: right;
+    width: 35%;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background-color: #1a1333;
+    border: 2px solid #6a5acd;
+    border-radius: 10px;
+}
+
+    .home-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .home-image figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 8px;
+        color: #c4b5fd;
+    }
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+    .gallery figure {
+        width: 300px;
+        margin: 0;
+        padding: 12px;
+        background-color: #1a1333;
+        border: 2px solid #6a5acd;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        transition: box-shadow 0.25s ease;
+    }
+
+        .gallery img:hover {
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+        }
+
+    .gallery figcaption {
+        margin-top: 8px;
+        font-size: 0.95rem;
+        color: #c4b5fd;
+    }
+
+/* Form */
+form {
+    max-width: 800px;
+}
+
+fieldset {
+    margin-bottom: 24px;
+    padding: 20px;
+    background-color: #1a1333;
+    border: 2px solid #6a5acd;
+    border-radius: 12px;
+}
+
+legend {
+    padding: 6px 12px;
+    background-color: #483d8b;
+    color: #ffffff;
+    border: 2px solid #6a5acd;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+form label {
+    display: block;
+    margin-bottom: 16px;
+    color: #e6e0ff;
+    font-weight: 700;
+    text-align: left;
+}
+
+.form-note {
+    margin-bottom: 12px;
+    color: #c4b5fd;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border: 2px solid #6a5acd;
+    border-radius: 10px;
+    background-color: #0f0c1a;
+    color: #e6e0ff;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-option,
+.check-option {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+    .radio-option input,
+    .check-option input {
+        margin-right: 10px;
+    }
+
+input[type="submit"] {
+    border: 2px solid #6a5acd;
+    border-radius: 10px;
+    padding: 12px 24px;
+    background-color: #483d8b;
+    color: #ffffff;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background-color: #6a5acd;
+    }
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #120e24, #1b1433, #120e24);
+    color: #cfc6ff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 24px;
+    clear: both;
+}
+
+/* Tablet and desktop nav */
+@media only screen and (min-width: 700px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav a {
+        border-bottom: none;
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 699px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-image {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
